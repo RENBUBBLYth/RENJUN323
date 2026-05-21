@@ -1,168 +1,89 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>RENJUN 323</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    background:#000;
-    color:white;
-}
-
-/* HEADER */
-
-header{
-    width:100%;
-    padding:25px 10%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:linear-gradient(to right,#111,#1a1a1a);
-    position:sticky;
-    top:0;
-    z-index:100;
-}
-
-.logo{
-    font-size:48px;
-    font-weight:bold;
-    letter-spacing:2px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:35px;
-    font-size:22px;
-    transition:0.3s;
-}
-
-nav a:hover{
-    color:#888;
-}
-
-/* HERO */
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:80px;
-    padding:80px 10%;
-    flex-wrap:wrap;
-}
-
-/* IMAGE */
-
-.hero-image img{
-    width:420px;
-    max-width:90vw;
-    border-radius:30px;
-    object-fit:cover;
-    box-shadow:0 0 40px rgba(255,255,255,0.15);
-}
-
-/* TEXT */
-
-.hero-text h1{
-    font-size:90px;
-    margin-bottom:30px;
-}
-
-.hero-text p{
-    font-size:30px;
-    margin-bottom:20px;
-    line-height:1.8;
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-header{
-    flex-direction:column;
-    gap:20px;
-}
-
-.logo{
-    font-size:38px;
-}
-
-nav a{
-    margin:0 10px;
-    font-size:18px;
-}
-
-.hero{
-    text-align:center;
-    gap:40px;
-}
-
-.hero-text h1{
-    font-size:52px;
-}
-
-.hero-text p{
-    font-size:22px;
-}
-
-.hero-image img{
-    width:320px;
-}
-
-}
-
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RENJUN 323</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-<header>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-logo">RENJUN <span>323</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">หน้าแรก</a></li>
+      <li><a href="#profile">ประวัติ</a></li>
+      <li><a href="#support">วิธีซัพ</a></li>
+      <li><a href="#works">ผลงาน</a></li>
+      <li><a href="#news">ข่าวสาร</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
 
-<div class="logo">RENJUN 323</div>
+  <!-- ===== HERO (หน้าแรก) ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-name-th">หวงเหรินจวิ้น · ฮวังอินจุน</p>
+      <h1 class="hero-title">HUANG RENJUN</h1>
+      <p class="hero-name-cn">黄仁俊 · 황런쥔</p>
+      <p class="hero-birth">เกิดเมื่อ 23 . 03 . 2000</p>
+      <div class="hero-btns">
+        <a href="#profile" class="btn-outline">ประวัติ</a>
+        <a href="#support" class="btn-fill">วิธีซัพ</a>
+      </div>
+    </div>
+  </section>
 
-<nav>
-<a href="#">หน้าแรก</a>
-<a href="#">ประวัติ</a>
-<a href="#">วิถีซัพ</a>
-<a href="#">ผลงาน</a>
-<a href="#">ข่าวสาร</a>
-</nav>
+  <!-- ===== PROFILE (ประวัติ) ===== -->
+  <section id="profile" class="section">
+    <div class="container">
 
-</header>
+      <div class="section-header">
+        <p class="section-num">01</p>
+        <h2 class="section-title">ประวัติ & โปรไฟล์</h2>
+        <p class="section-sub">ทุกอย่างที่ควรรู้เกี่ยวกับ Huang Renjun</p>
+      </div>
 
-<section class="hero">
+      <!-- ข้อมูลส่วนตัว -->
+      <div class="card">
+        <h3 class="card-title">🪪 ข้อมูลส่วนตัว</h3>
+        <table class="info-table">
+          <tr>
+            <td>ชื่อจีน</td>
+            <td>黄仁俊 (Huáng Rénjùn)</td>
+          </tr>
+          <tr>
+            <td>ชื่อเกาหลี</td>
+            <td>황런쥔 (Hwang Reon-jun)</td>
+          </tr>
+          <tr>
+            <td>ชื่อเล่น</td>
+            <td>Renjun, Injun</td>
+          </tr>
+          <tr>
+            <td>วันเกิด</td>
+            <td>23 มีนาคม ค.ศ. 2000</td>
+          </tr>
+          <tr>
+            <td>สัญชาติ</td>
+            <td>จีน 🇨🇳</td>
+          </tr>
+          <tr>
+            <td>เมืองเกิด</td>
+            <td>Jilin, จีน</td>
+          </tr>
+          <tr>
+            <td>กรุ๊ปเลือด</td>
+            <td>O</td>
+          </tr>
+        </table>
+      </div>
 
-<div class="hero-image">
+    </div>
+  </section>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="RENJUN">
-</div>
-
-<div class="hero-text">
-
-<h1>HUANG RENJUN</h1>
-
-<p>黄仁俊 · 황런쥔</p>
-
-<p>หวงเหรินจวิ้น / ฮวังอินจุน</p>
-
-<p>เกิดวันที่ 23.03.2000</p>
-
-</div>
-
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
