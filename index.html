@@ -5,84 +5,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RENJUN 323</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="nav-logo">RENJUN <span>323</span></div>
-    <ul class="nav-links">
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a class="logo" href="#home">RENJUN <em>323</em></a>
+    <ul class="nav-links" id="navLinks">
       <li><a href="#home">หน้าแรก</a></li>
       <li><a href="#profile">ประวัติ</a></li>
       <li><a href="#support">วิธีซัพ</a></li>
       <li><a href="#works">ผลงาน</a></li>
       <li><a href="#news">ข่าวสาร</a></li>
     </ul>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <button class="burger" id="burger" aria-label="เมนู">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
-  <!-- ===== HERO (หน้าแรก) ===== -->
+  <!-- HERO -->
   <section id="home" class="hero">
-    <div class="hero-content">
-      <p class="hero-name-th">หวงเหรินจวิ้น · ฮวังอินจุน</p>
-      <h1 class="hero-title">HUANG RENJUN</h1>
-      <p class="hero-name-cn">黄仁俊 · 황런쥔</p>
-      <p class="hero-birth">เกิดเมื่อ 23 . 03 . 2000</p>
-      <div class="hero-btns">
-        <a href="#profile" class="btn-outline">ประวัติ</a>
-        <a href="#support" class="btn-fill">วิธีซัพ</a>
+    <div class="deco deco-1"></div>
+    <div class="deco deco-2"></div>
+    <div class="deco deco-3"></div>
+
+    <div class="hero-inner">
+      <div class="hero-left">
+        <p class="tag">✦ FANSITE ✦</p>
+        <h1 class="big-name">HUANG<br>RENJUN</h1>
+        <p class="sub-name">หวงเหรินจวิ้น · ฮวังอินจุน</p>
+        <p class="sub-name cn">黄仁俊 · 황런쥔</p>
+        <div class="birth-badge">23 · 03 · 2000</div>
+        <div class="hero-btns">
+          <a href="#profile" class="btn-main">ประวัติ</a>
+          <a href="#support" class="btn-ghost">วิธีซัพ</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-frame">
+          <div class="photo-inner">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1OeBRQrxZ_k6yF38SNKey38IxD3DWw4k_"
+              alt="Huang Renjun"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="frame-deco top-left"></div>
+          <div class="frame-deco top-right"></div>
+          <div class="frame-deco bot-left"></div>
+          <div class="frame-deco bot-right"></div>
+        </div>
       </div>
     </div>
+
+    <div class="scroll-hint">scroll ↓</div>
   </section>
 
-  <!-- ===== PROFILE (ประวัติ) ===== -->
+  <!-- PROFILE -->
   <section id="profile" class="section">
     <div class="container">
-
-      <div class="section-header">
-        <p class="section-num">01</p>
-        <h2 class="section-title">ประวัติ & โปรไฟล์</h2>
-        <p class="section-sub">ทุกอย่างที่ควรรู้เกี่ยวกับ Huang Renjun</p>
+      <div class="sec-head">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">ประวัติ & โปรไฟล์</h2>
+        <p class="sec-sub">ทุกอย่างที่ควรรู้เกี่ยวกับ Huang Renjun</p>
       </div>
 
-      <!-- ข้อมูลส่วนตัว -->
-      <div class="card">
-        <h3 class="card-title">🪪 ข้อมูลส่วนตัว</h3>
-        <table class="info-table">
-          <tr>
-            <td>ชื่อจีน</td>
-            <td>黄仁俊 (Huáng Rénjùn)</td>
-          </tr>
-          <tr>
-            <td>ชื่อเกาหลี</td>
-            <td>황런쥔 (Hwang Reon-jun)</td>
-          </tr>
-          <tr>
-            <td>ชื่อเล่น</td>
-            <td>Renjun, Injun</td>
-          </tr>
-          <tr>
-            <td>วันเกิด</td>
-            <td>23 มีนาคม ค.ศ. 2000</td>
-          </tr>
-          <tr>
-            <td>สัญชาติ</td>
-            <td>จีน 🇨🇳</td>
-          </tr>
-          <tr>
-            <td>เมืองเกิด</td>
-            <td>Jilin, จีน</td>
-          </tr>
-          <tr>
-            <td>กรุ๊ปเลือด</td>
-            <td>O</td>
-          </tr>
-        </table>
-      </div>
+      <div class="profile-grid">
+        <div class="profile-photo">
+          <img
+            src="https://drive.google.com/uc?export=view&id=1OeBRQrxZ_k6yF38SNKey38IxD3DWw4k_"
+            alt="Huang Renjun"
+            onerror="this.style.display='none'"
+          />
+          <p class="photo-caption">HUANG RENJUN · 2000</p>
+        </div>
 
+        <div class="profile-info">
+          <h3 class="info-heading">ข้อมูลส่วนตัว</h3>
+          <div class="info-row"><span>ชื่อจีน</span><span>黄仁俊 (Huáng Rénjùn)</span></div>
+          <div class="info-row"><span>ชื่อเกาหลี</span><span>황런쥔 (Hwang Reon-jun)</span></div>
+          <div class="info-row"><span>ชื่อเล่น</span><span>Renjun, Injun</span></div>
+          <div class="info-row"><span>วันเกิด</span><span>23 มีนาคม ค.ศ. 2000</span></div>
+          <div class="info-row"><span>สัญชาติ</span><span>จีน</span></div>
+          <div class="info-row"><span>เมืองเกิด</span><span>Jilin, จีน</span></div>
+          <div class="info-row"><span>กรุ๊ปเลือด</span><span>O</span></div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- PLACEHOLDER SECTIONS -->
+  <section id="support" class="section section-alt">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">วิธีซัพ</h2>
+        <p class="sec-sub">Coming soon</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="works" class="section">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">ผลงาน</h2>
+        <p class="sec-sub">Coming soon</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="section section-alt">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-num">04</span>
+        <h2 class="sec-title">ข่าวสาร</h2>
+        <p class="sec-sub">Coming soon</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-logo">RENJUN <em>323</em></p>
+    <p class="footer-text">HUANG RENJUN FANSITE &nbsp;·&nbsp; 黄仁俊</p>
+    <p class="footer-copy">made with love ♡</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
